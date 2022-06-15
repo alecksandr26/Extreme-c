@@ -36,6 +36,9 @@ int car_turn(Car *car);
 /* car_init: Initialize a car */
 void car_init(Car *car, enum Colors color, short velocity, unsigned char num_chair);
 
+/* car_destroy: Destroy the data of the object */
+void car_destroy(Car *car);
+
 #endif
 
 

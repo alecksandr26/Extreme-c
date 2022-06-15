@@ -21,8 +21,9 @@ int main()
         puts("Car moving");
     else
         puts("Car not moving");
-        
-    
+
+    car_destroy(&car);
+            
     return 0;
 }
 

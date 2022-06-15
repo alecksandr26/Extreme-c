@@ -1,9 +1,13 @@
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+
+
 /* Include the header file */
 #include "car.h"
 
-#include <stdio.h>
-#include <assert.h>
 
 int car_move(Car *car)
 {
@@ -29,7 +33,7 @@ int car_turn(Car *car)
 }
 
 
-int car_set_gas(Car *car, unsigned long gas)
+int car_set_gas(Car *car, unsigned char gas)
 {
     assert(car != NULL && "Can't exist a null car");
     
@@ -52,6 +56,14 @@ void car_init(Car *car, enum Colors color, short velocity, unsigned char num_cha
     car->gas = 0;
     car->num_chair = num_chair;
     car->velocity = velocity;
+}
+
+
+
+void car_destroy(Car *car)
+{
+    
+    memset(car, 0, sizeof(Car));
 }
 
 
