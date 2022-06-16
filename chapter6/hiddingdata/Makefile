@@ -10,3 +10,11 @@ car.o: car.c car.h
 
 test.out: test.c car.h $(OBJS)
 	$(C) $< $(OBJS) -o $@
+
+
+clean:
+	rm $(OBJS) $(BINS)
+
+
+test:
+	./test.out
