@@ -34,6 +34,3 @@ Car *create_car(enum Colors color, short velocity, unsigned char num_chair);
 void destroy_car(Car *car);
 
 #endif
-
-
- 
