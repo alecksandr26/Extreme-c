@@ -1,5 +1,5 @@
 # Extreme-c
-Just my code from the book extreme-c, about how to do OOP in c language and other stuff.
+Just my code from the book extreme-c, about how to do OOP in c language, how to program concurrent and parallel systems and how to program syscall and modules of linux in c.
 ## Content:
 1. [Encapsulation and hidding data](./chapter6)
 2. [Composition and Aggregation](./chapter7)
