@@ -21,7 +21,6 @@ int main()
     /* Look this is polymorphic We are using the original code base of aninmal
        And we are overwriting it
      */
-
     animal_sound((Animal *) c);
     animal_sound((Animal *) d);
 
