@@ -1,0 +1,2 @@
+# Process Execution
+Every program is executed as a process. Before we have a process, we just have an executable binary file that contains some memory segments and probably lots of machine-level instructions. Conversely, every process is an individual instance of a program being executed. Therefore, a single compiled program (or an executable binary file) can be executed multiple times through different processes. In fact, that's why our focus is on the processes in this chapter, rather than upon the programs themselves.
