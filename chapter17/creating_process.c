@@ -19,17 +19,17 @@ int main()
 
     printf("Before calling fork ...\n");
     ret = fork();
-
-    if (ret) /* Child process */
-        say_hello("Child process", ret);
-        
-    else /* Father process */
-        say_hello("Father process", getpid());
-
-    printf("Type CTRL-C to exit ...\n");
     
-    while (1)
-        ;
+    if (ret) { /* Father process */
+        say_hello("Father process", getpid());
+        printf("Child process spawned %i\n", ret);
+    }
+        
+    else {/* Child process */
+        say_hello("Child process", getpid());
+        return 0; /* Return and finish the program */
+    }
+
     
     return 0;
 }
