@@ -71,9 +71,6 @@ void inc_counter()
 }
 
 
-
-
-
 int main()
 {
     void *map;
